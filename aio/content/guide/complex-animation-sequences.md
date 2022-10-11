@@ -1,5 +1,8 @@
 # Complex animation sequences
 
+Angular also lets you animate coordinated sequences, such as an entire grid or list of elements as they enter and leave a page.
+You can choose to run multiple animations in parallel, or run discrete animations sequentially, one following another.
+
 ## Prerequisites
 
 A basic understanding of the following concepts:
@@ -7,8 +10,7 @@ A basic understanding of the following concepts:
 *   [Introduction to Angular animations](guide/animations)
 *   [Transition and triggers](guide/transition-and-triggers)
 
-Angular also lets you animate coordinated sequences, such as an entire grid or list of elements as they enter and leave a page.
-You can choose to run multiple animations in parallel, or run discrete animations sequentially, one following another.
+## Animation sequence functions
 
 The functions that control complex animation sequences are:
 
@@ -118,7 +120,7 @@ For each change:
 
 *   If there are multiple elements entering or leaving the DOM, staggers each animation starting at the top of the page, with a 50-millisecond delay between each element
 
-## Animating the items of a reordering list
+## Animate the items of a reordering list
 
 Although Angular animates correctly `*ngFor` list items out of the box, it cannot do so if their ordering changes.
 This is because it loses track of which element is which, resulting in broken animations.
@@ -155,4 +157,4 @@ You might also be interested in the following:
 *   [Reusable animations](guide/reusable-animations)
 *   [Route transition animations](guide/route-animations)
 
-@reviewed 2022-09-23
+@reviewed 2022-10-11
